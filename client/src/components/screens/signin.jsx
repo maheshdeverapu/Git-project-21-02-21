@@ -19,7 +19,7 @@ const Signin = ()=>{
             })
         }).then(res=>res.json())
         .then((data)=>{
-            // console.log(data.token);
+            console.log(data.token);
             // debugger
             localStorage.setItem("token",data.token)
             console.log(localStorage.getItem("token"))
