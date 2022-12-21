@@ -19,10 +19,10 @@ const Signin = ()=>{
             })
         }).then(res=>res.json())
         .then((data)=>{
-            console.log(data.token);
+            console.log(data, "i am at data");
             // debugger
             localStorage.setItem("token",data.token)
-            console.log(localStorage.getItem("token"))
+//             console.log(localStorage.getItem("token"))
         }).catch(err=>console.log("i am here"))
            .finally()
            navigate("/home");
