@@ -23,7 +23,7 @@ const Signin = ()=>{
             // debugger
             localStorage.setItem("token",data.token)
             console.log(localStorage.getItem("token"))
-        }).catch(err=>console.log(err))
+        }).catch(err=>console.log("i am here"))
            .finally()
            navigate("/home");
     }
